@@ -30,6 +30,21 @@
             </nav>
         </header>
         <main>
+            <dialog id="myDialog" open>
+                <form method="dialog" action="index.html">
+                    <label for="fName">Indtast fulde navn</label>
+                    <input type="text" name="fName" placeholder="John Doe..." required>
+                    <label for="telNumber">Indtast telefon nummer</label>
+                    <input type="tel" name="telNumber" placeholder="+45 xx xx xx xx" required>
+                    <label for="email">Indtast Email</label>
+                    <input type="email" name="email" placeholder="none@fake.com" required>
+
+                    <span class="form-btns">
+                        <input type="reset" value="Fortryd">
+                        <input type="submit" value="Send besked">
+                    </span>
+                </form>
+            </dialog>
             <section class="about-spicy">
                 <header class="about-header"><h1>Om Spicy</h1></header>
                 <!--Article One-->

@@ -1,3 +1,47 @@
+#myDialog {
+    width: 50%;
+    height: 28%;
+    background-color: ;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form input {
+    border-radius: 10px;
+}
+
+form input::placeholder {
+    padding-left: 0.3rem;
+}
+
+form .form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 2rem;
+}
+
+.form-btns input[type="reset"],
+.form-btns input[type="submit"] {
+    padding: 1rem 1.4rem;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.form-btns input[type="reset"] {
+    background: #c82113;
+}
+
+.form-btns input[type="submit"] {
+    background: #1085df;
+}
+
 h1, h2 {
     font-family: "Bebas Neue";
 }
@@ -71,6 +115,11 @@ p {
 /* Media Queries */
 /* Desktop Version */
 @media (min-width: 1300px) {
+
+    #myDialog {
+        margin-top: 2rem;
+    }
+
     .about-spicy {
         display: flex;
         flex-direction: column;
