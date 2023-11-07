@@ -1,0 +1,17 @@
+FONTS:
+
+LOGO MM:
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+font-family: 'Bebas Neue', cursive;
+
+CONTENT TEXT:
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200;400;600&display=swap');
+font-family: 'Sofia Sans Condensed', sans-serif;
+
+COLOR-SCHEME:
+#333333
+#000000
+#c82113
+#94180e
+#1085df
+#0e5a94
