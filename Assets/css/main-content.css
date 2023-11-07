@@ -1,10 +1,16 @@
 #myDialog {
     width: 50%;
     height: 28%;
-    background-color: ;
+}
+
+#myDialog a {
+    text-decoration: none;
+    font-size: 17px;
+    color: red;
 }
 
 dialog form {
+    padding-top: 0.7rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

@@ -25,12 +25,13 @@
                     <li><a href="#">Om Spicy</a></li>
                     <li><a href="#">Galleri</a></li>
                     <li><a href="#">Favorit</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#" onclick="window.myDialog.show();">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <dialog id="myDialog" open>
+                <a href="#" onclick="window.myDialog.close();">Luk Modal</a>
                 <form method="dialog" action="index.html">
                     <label for="fName">Indtast fulde navn</label>
                     <input type="text" name="fName" placeholder="John Doe..." required>
