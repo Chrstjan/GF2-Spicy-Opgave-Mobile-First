@@ -1,6 +1,6 @@
-.main-container {
+/* .main-container {
     max-width: 500px;
-}
+} */
 
 .hero-image {
     position: relative;
@@ -38,4 +38,12 @@
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
+}
+
+.main-nav ul li a:hover {
+    color: #1085df;
+}
+
+.main-nav ul li:last-of-type a {
+    color: #1085df;
 }
