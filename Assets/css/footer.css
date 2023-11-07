@@ -31,3 +31,16 @@
 .google-maps iframe{
     margin-bottom: 1rem;
 }
+
+/* Media Queries */
+/* Desktop Version */
+@media (min-width: 1300px) {
+    .main-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-spicy .so-me-images img {
+        width: 5vw;
+    }
+}

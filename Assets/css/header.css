@@ -47,3 +47,11 @@
 .main-nav ul li:last-of-type a {
     color: #1085df;
 }
+
+/* Media Queries */
+/* Desktop Version */
+@media (min-width: 1300px) {
+    .main-nav ul {
+        justify-content: flex-start;
+    }
+}

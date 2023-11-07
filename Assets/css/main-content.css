@@ -67,3 +67,36 @@ p {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* Media Queries */
+/* Desktop Version */
+@media (min-width: 1300px) {
+    .about-spicy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .gallery-images img {
+        width: 30vw;
+    }
+
+    .favorite .favorite-images {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .favorite-images .big img {
+        width: 20vw;
+    }
+
+    .favorite-images .regular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .favorite-images .regular img {
+        width: 14vw;
+    }
+}
