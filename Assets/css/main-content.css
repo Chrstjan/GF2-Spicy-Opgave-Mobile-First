@@ -1,6 +1,7 @@
 #myDialog {
     width: 50%;
     height: 28%;
+    border-radius: 10px;
 }
 
 #myDialog a {
