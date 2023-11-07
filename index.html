@@ -10,16 +10,123 @@
                         <!--Google fonts & fontawesome icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
-    <title>Html Boilerplate</title>
+    <title>Spicy Opgave Mobile first</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            
-        </section>
-    </main>
-    <footer></footer>
+    <div class="main-container">
+        <header class="main-header">
+            <div class="hero-image">
+                <img class="background-image" src="./Assets/images/Background.jpg">
+                <img class="logo-image" src="./Assets/images/Logo-Spicy-White.png">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Om Spicy</a></li>
+                    <li><a href="#">Galleri</a></li>
+                    <li><a href="#">Favorit</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about-spicy">
+                <header class="about-header"><h1>Om Spicy</h1></header>
+                <!--Article One-->
+                <article class="about-spicy-article">
+                    <header><h2>Konceptet Spicy</h2></header>
+                    <div class="article-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis minima nulla. Blanditiis, doloremque! Itaque eaque vero, aliquid iusto deleniti cupiditate accusantium eveniet nostrum, vitae fuga quae consequuntur magni beatae.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste repellendus saepe architecto consectetur sapiente magnam ullam illo reiciendis incidunt, consequatur expedita, voluptate eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
+                        </p>
+                        <footer class="about-footer">
+                            <a href="#">Læs Mere:</a>
+                        </footer>
+                    </div>
+                </article>
+
+                <!--Article Two-->
+                <article class="about-spicy-article">
+                    <header><h2>Produkterne</h2></header>
+                    <div class="article-text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis minima nulla. Blanditiis, doloremque! Itaque eaque vero, aliquid iusto deleniti cupiditate accusantium eveniet nostrum, vitae fuga quae consequuntur magni beatae.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste repellendus saepe architecto consectetur sapiente magnam ullam illo reiciendis incidunt, consequatur expedita, voluptate eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
+                        </p>
+                        <footer class="about-footer">
+                            <a href="#">Læs Mere:</a>
+                        </footer>
+                    </div>
+                </article>
+            </section>
+
+            <section class="gallery">
+                <header class="gallery-header"><h2>Galleri</h2></header>
+                <!--Gallery One-->
+                <figure class="gallery-images">
+                    <img src="./Assets/images/Product/Chili-02.jpg">
+                    <img src="./Assets/images/Product/Chili-01.jpg">
+                    <img src="./Assets/images/Product/Chili-03.jpg">
+                </figure>
+
+                <!--Gallery Two-->
+                <figure class="gallery-images">
+                    <img src="./Assets/images/Product/Chili-04.jpg">
+                    <img src="./Assets/images/Product/Chili-05.jpg">
+                    <img src="./Assets/images/Product/Chili-06.jpg">
+                </figure>
+            </section>
+
+            <section class="favorite">
+                <header class="favorite-header"><h2>Vælg din favorit</h2></header>
+                <figure class="favorite-images">
+                    <span class="big">
+                        <img src="./Assets/images/Product/Choose-01.jpg">
+                    </span>
+                    <span class="regular">
+                        <img src="./Assets/images/Product/Choose-02.jpg">
+                        <img src="./Assets/images/Product/Choose-03.jpg">
+                        <img src="./Assets/images/Product/Choose-04.jpg">
+                        <img src="./Assets/images/Product/Choose-05.jpg">
+                    </span>
+                </figure>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <section class="contact-spicy">
+                <header class="contact-footer"><h2>Kontakt Spicy:</h2></header>
+                <div class="contact-text">
+                    <p>Spicy <span class="red-span">Hot</span>Company</p>
+                    
+                    <p>Boulevarden 39</p>
+
+                    <p>9000 Aalborg</p>
+
+                    <p>Send os en mail:</p>
+
+                    <p>Ring til os:</p>
+                </div>
+
+                <figure class="so-me-images">
+                    <img src="./Assets/images/Some-Facebook.png">
+                    <img src="./Assets/images/SoMe-Twitter.png">
+                    <img src="./Assets/images/SoMe-Youtube.png">
+                </figure>
+            </section>
+
+            <section class="google-maps">
+                <header class="google-header"><h2>Google Maps:</h2></header>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.459063784277!2d9.916163077260903!3d57.0436823918323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932f3bcda26e3%3A0xcd44aae1c87a63c5!2sBoulevarden%2039%2C%209000%20Aalborg!5e0!3m2!1sen!2sdk!4v1699357738323!5m2!1sen!2sdk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </footer>
+    </div>
     <script src="./Assets/js/app.js"></script>
 </body>
 </html>

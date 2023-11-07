@@ -1,0 +1,41 @@
+.main-container {
+    max-width: 500px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image .background-image {
+    width: 100%;
+}
+
+.main-header .hero-image .logo-image {
+   position: absolute;
+   width: 30%;
+   top: 30%;
+   transform: translateY(-50%);
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.main-header .main-nav {
+    background: #000;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}

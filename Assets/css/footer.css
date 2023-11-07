@@ -1,0 +1,33 @@
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer h2 {
+    color: #1085df;
+}
+
+.main-footer .red-span {
+    color: #c82113;
+}
+
+.main-footer p:nth-child(1n + 4) {
+    color: #1085df;
+}
+
+.contact-spicy .so-me-images img {
+    width: 12vw;
+    cursor: pointer;
+}
+
+.so-me-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.google-maps iframe{
+    margin-bottom: 1rem;
+}
