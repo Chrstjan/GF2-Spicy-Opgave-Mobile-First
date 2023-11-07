@@ -25,6 +25,10 @@ form input::placeholder {
     padding-left: 0.3rem;
 }
 
+form input:invalid {
+    outline: #c82113;
+}
+
 form .form-btns {
     display: flex;
     justify-content: center;

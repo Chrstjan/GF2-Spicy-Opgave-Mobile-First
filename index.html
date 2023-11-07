@@ -34,11 +34,11 @@
                 <a href="#" onclick="window.myDialog.close();">Luk Modal</a>
                 <form method="dialog" action="index.html">
                     <label for="fName">Indtast fulde navn</label>
-                    <input type="text" name="fName" placeholder="John Doe..." required>
+                    <input type="text" name="fName" placeholder="John Doe..." required pattern="[A-Za-z].{2}">
                     <label for="telNumber">Indtast telefon nummer</label>
-                    <input type="tel" name="telNumber" placeholder="+45 xx xx xx xx" required>
+                    <input type="tel" name="telNumber" placeholder="+45 xx xx xx xx" required pattern="[0-9].{8}">
                     <label for="email">Indtast Email</label>
-                    <input type="email" name="email" placeholder="none@fake.com" required>
+                    <input type="email" name="email" placeholder="none@fake.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
 
                     <span class="form-btns">
                         <input type="reset" value="Fortryd">
