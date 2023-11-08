@@ -8,6 +8,10 @@
     color: #1085df;
 }
 
+.contact-text p {
+    font-size: 20px;
+}
+
 .main-footer .red-span {
     color: #c82113;
 }
@@ -30,6 +34,7 @@
 
 .google-maps iframe{
     margin-bottom: 1rem;
+    width: 70%;
 }
 
 /* Media Queries */
