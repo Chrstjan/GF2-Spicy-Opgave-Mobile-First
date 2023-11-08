@@ -23,15 +23,15 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Start</a></li>
-                    <li><a href="#">Om Spicy</a></li>
-                    <li><a href="#">Galleri</a></li>
-                    <li><a href="#">Favorit</a></li>
+                    <li><a href="#about">Om Spicy</a></li>
+                    <li><a href="#gallery">Galleri</a></li>
+                    <li><a href="#favorite">Favorit</a></li>
                     <li><a href="#" onclick="window.myDialog.show();">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <dialog id="myDialog" open>
+            <dialog id="myDialog">
                 <a href="#" onclick="window.myDialog.close();">Luk Modal</a>
                 <form method="dialog" action="index.html">
                     <label for="fName">Indtast fulde navn</label>
@@ -47,7 +47,7 @@
                     </span>
                 </form>
             </dialog>
-            <section class="about-spicy">
+            <section class="about-spicy" id="about">
                 <header class="about-header"><h1>Om Spicy</h1></header>
                 <!--Article One-->
                 <article class="about-spicy-article">
@@ -84,7 +84,7 @@
                 </article>
             </section>
 
-            <section class="gallery">
+            <section class="gallery" id="gallery">
                 <header class="gallery-header"><h2>Galleri</h2></header>
                 <!--Gallery One-->
                 <figure class="gallery-images">
@@ -101,7 +101,7 @@
                 </figure>
             </section>
 
-            <section class="favorite">
+            <section class="favorite" id="favorite">
                 <header class="favorite-header"><h2>Vælg din favorit</h2></header>
                 <figure class="favorite-images">
                     <span class="big">
