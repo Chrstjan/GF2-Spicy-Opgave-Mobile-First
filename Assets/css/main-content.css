@@ -1,13 +1,13 @@
 #myDialog {
     width: 50%;
-    height: 28%;
+    height: 40%;
     border-radius: 10px;
 }
 
 #myDialog a {
     text-decoration: none;
     font-size: 17px;
-    color: red;
+    color: #c82113;
 }
 
 dialog form {
@@ -19,6 +19,7 @@ dialog form {
 
 form input {
     border-radius: 10px;
+    padding: 0.3rem;
 }
 
 form input::placeholder {
@@ -129,6 +130,11 @@ p {
 
     #myDialog {
         margin-top: 2rem;
+        height: 34%;
+    }
+
+    form input {
+        padding: 0.5rem;
     }
 
     .about-spicy {

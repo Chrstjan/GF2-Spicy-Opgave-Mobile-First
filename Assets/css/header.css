@@ -4,10 +4,13 @@
 
 .hero-image {
     position: relative;
+    margin: 0;
 }
 
 .hero-image .background-image {
     width: 100%;
+    margin: 0;
+    display: block;
 }
 
 .main-header .hero-image .logo-image {
@@ -21,6 +24,7 @@
 
 .main-header .main-nav {
     background: #000;
+    margin: 0;
 }
 
 .main-nav ul {
