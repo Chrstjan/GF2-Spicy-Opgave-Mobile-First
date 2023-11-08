@@ -60,7 +60,8 @@ h1, h2 {
     font-family: "Bebas Neue";
 }
 
-p {
+p,
+a {
     font-family: "Sofia Sans Condensed", sans-serif;
 }
 
@@ -139,10 +140,15 @@ p {
         padding: 0.5rem;
     }
 
-    .about-spicy {
+    /* .about-spicy {
         display: flex;
         flex-direction: column;
         align-items: center;
+    } */
+
+    .desktop-articles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .gallery .gallery-images img {
