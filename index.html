@@ -1,150 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                        <!--Different stylesheet for sections-->
-    <link rel="stylesheet" href="./Assets/css/main.css">
+    <!--Different stylesheet for sections-->
+    <link rel="stylesheet" href="./Assets/css/main.css" />
     <script async defer src="./Assets/js/app.js"></script>
 
-                        <!--Google fonts & fontawesome icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--Google fonts & fontawesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
 
     <title>Spicy Opgave Mobile first</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <header class="main-header">
-            <div class="hero-image">
-                <img class="background-image" src="./Assets/images/Background.jpg">
-                <img class="logo-image" src="./Assets/images/Logo-Spicy-White.png">
+      <header class="main-header">
+        <div class="hero-image">
+          <img class="background-image" src="./Assets/images/Background.jpg" />
+          <img class="logo-image" src="./Assets/images/Logo-Spicy-White.png" />
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Start</a></li>
+            <li><a href="#about">Om Spicy</a></li>
+            <li><a href="#gallery">Galleri</a></li>
+            <li><a href="#favorite">Favorit</a></li>
+            <li>
+              <a id="openModal" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <dialog id="myDialog" open>
+          <a id="closeModal" href="#">Luk Modal</a>
+          <form id="myForm" method="GET" action="/">
+            <label for="fName">Indtast fulde navn</label>
+            <input
+              id="fName"
+              type="text"
+              name="fName"
+              placeholder="John Doe..."
+            />
+            <label for="telNumber">Indtast telefon nummer</label>
+            <input
+              id="telNumber"
+              type="tel"
+              name="telNumber"
+              placeholder="+45 xx xx xx xx"
+            />
+            <label for="email">Indtast Email</label>
+            <input
+              id="Email"
+              type="email"
+              name="email"
+              placeholder="none@fake.com"
+            />
+
+            <span class="form-btns">
+              <input type="reset" value="Fortryd" />
+              <input type="submit" value="Send besked" />
+            </span>
+            <div id="error">
+              <p class="formRequiredment"></p>
+                Navn skal være mellem 4 og 30 bogstaver
+              </p>
+              <p class="formRequiredment">Telefon nummer skal være gyldig</p>
+              <p class="formRequiredment">Email skal være gyldig</p>
             </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#about">Om Spicy</a></li>
-                    <li><a href="#gallery">Galleri</a></li>
-                    <li><a href="#favorite">Favorit</a></li>
-                    <li><a href="#" onclick="window.myDialog.show();">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <dialog id="myDialog">
-                <a href="#" onclick="window.myDialog.close();">Luk Modal</a>
-                <form method="dialog" action="index.html">
-                    <label for="fName">Indtast fulde navn</label>
-                    <input type="text" name="fName" placeholder="John Doe..." required pattern="[A-Za-z].{2}">
-                    <label for="telNumber">Indtast telefon nummer</label>
-                    <input type="tel" name="telNumber" placeholder="+45 xx xx xx xx" required pattern="[0-9].{8}">
-                    <label for="email">Indtast Email</label>
-                    <input type="email" name="email" placeholder="none@fake.com" required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          </form>
+        </dialog>
+        <section class="about-spicy" id="about">
+          <header class="about-header"><h1>Om Spicy</h1></header>
+          <!--Article One-->
+          <section class="desktop-articles">
+            <article class="about-spicy-article">
+              <header><h2>Konceptet Spicy</h2></header>
+              <div class="article-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus officiis minima nulla. Blanditiis, doloremque! Itaque
+                  eaque vero, aliquid iusto deleniti cupiditate accusantium
+                  eveniet nostrum, vitae fuga quae consequuntur magni beatae.
+                </p>
 
-                    <span class="form-btns">
-                        <input type="reset" value="Fortryd">
-                        <input type="submit" value="Send besked">
-                    </span>
-                </form>
-            </dialog>
-            <section class="about-spicy" id="about">
-                <header class="about-header"><h1>Om Spicy</h1></header>
-                <!--Article One-->
-                <section class="desktop-articles">
-                    <article class="about-spicy-article">
-                        <header><h2>Konceptet Spicy</h2></header>
-                        <div class="article-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis minima nulla. Blanditiis, doloremque! Itaque eaque vero, aliquid iusto deleniti cupiditate accusantium eveniet nostrum, vitae fuga quae consequuntur magni beatae.
-                            </p>
-    
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste repellendus saepe architecto consectetur sapiente magnam ullam illo reiciendis incidunt, consequatur expedita, voluptate eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
-                            </p>
-                            <footer class="about-footer">
-                                <a href="#">Læs Mere:</a>
-                            </footer>
-                        </div>
-                    </article>
-    
-                    <!--Article Two-->
-                    <article class="about-spicy-article">
-                        <header><h2>Produkterne</h2></header>
-                        <div class="article-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officiis minima nulla. Blanditiis, doloremque! Itaque eaque vero, aliquid iusto deleniti cupiditate accusantium eveniet nostrum, vitae fuga quae consequuntur magni beatae.
-                            </p>
-    
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste repellendus saepe architecto consectetur sapiente magnam ullam illo reiciendis incidunt, consequatur expedita, voluptate eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
-                            </p>
-                            <footer class="about-footer">
-                                <a href="#">Læs Mere:</a>
-                            </footer>
-                        </div>
-                    </article>
-                </section>
-            </section>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  repellendus saepe architecto consectetur sapiente magnam ullam
+                  illo reiciendis incidunt, consequatur expedita, voluptate
+                  eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
+                </p>
+                <footer class="about-footer">
+                  <a href="#">Læs Mere:</a>
+                </footer>
+              </div>
+            </article>
 
-            <section class="gallery" id="gallery">
-                <header class="gallery-header"><h2>Galleri</h2></header>
-                <!--Gallery One-->
-                <figure class="gallery-images">
-                    <img src="./Assets/images/Product/Chili-02.jpg">
-                    <img src="./Assets/images/Product/Chili-01.jpg">
-                    <img src="./Assets/images/Product/Chili-03.jpg">
-                </figure>
+            <!--Article Two-->
+            <article class="about-spicy-article">
+              <header><h2>Produkterne</h2></header>
+              <div class="article-text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Possimus officiis minima nulla. Blanditiis, doloremque! Itaque
+                  eaque vero, aliquid iusto deleniti cupiditate accusantium
+                  eveniet nostrum, vitae fuga quae consequuntur magni beatae.
+                </p>
 
-                <!--Gallery Two-->
-                <figure class="gallery-images">
-                    <img src="./Assets/images/Product/Chili-04.jpg">
-                    <img src="./Assets/images/Product/Chili-05.jpg">
-                    <img src="./Assets/images/Product/Chili-06.jpg">
-                </figure>
-            </section>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+                  repellendus saepe architecto consectetur sapiente magnam ullam
+                  illo reiciendis incidunt, consequatur expedita, voluptate
+                  eaque deleniti repellat ipsa neque dolore cum? Consequuntur.
+                </p>
+                <footer class="about-footer">
+                  <a href="#">Læs Mere:</a>
+                </footer>
+              </div>
+            </article>
+          </section>
+        </section>
 
-            <section class="favorite" id="favorite">
-                <header class="favorite-header"><h2>Vælg din favorit</h2></header>
-                <figure class="favorite-images">
-                    <span class="big">
-                        <img src="./Assets/images/Product/Choose-01.jpg">
-                    </span>
-                    <span class="regular">
-                        <img class="favImg" src="./Assets/images/Product/Choose-02.jpg">
-                        <img class="favImg" src="./Assets/images/Product/Choose-03.jpg">
-                        <img class="favImg" src="./Assets/images/Product/Choose-04.jpg">
-                        <img class="favImg" src="./Assets/images/Product/Choose-05.jpg">
-                    </span>
-                </figure>
-            </section>
-        </main>
-        <footer class="main-footer">
-            <section class="contact-spicy">
-                <header class="contact-footer"><h2>Kontakt Spicy:</h2></header>
-                <div class="contact-text">
-                    <p>Spicy <span class="red-span">Hot</span>Company</p>
-                    
-                    <p>Boulevarden 39</p>
+        <section class="gallery" id="gallery">
+          <header class="gallery-header"><h2>Galleri</h2></header>
+          <!--Gallery One-->
+          <figure class="gallery-images">
+            <img src="./Assets/images/Product/Chili-02.jpg" />
+            <img src="./Assets/images/Product/Chili-01.jpg" />
+            <img src="./Assets/images/Product/Chili-03.jpg" />
+          </figure>
 
-                    <p>9000 Aalborg</p>
+          <!--Gallery Two-->
+          <figure class="gallery-images">
+            <img src="./Assets/images/Product/Chili-04.jpg" />
+            <img src="./Assets/images/Product/Chili-05.jpg" />
+            <img src="./Assets/images/Product/Chili-06.jpg" />
+          </figure>
+        </section>
 
-                    <p>Send os en mail:</p>
+        <section class="favorite" id="favorite">
+          <header class="favorite-header"><h2>Vælg din favorit</h2></header>
+          <figure class="favorite-images">
+            <span class="big">
+              <img src="./Assets/images/Product/Choose-01.jpg" />
+            </span>
+            <span class="regular">
+              <img class="favImg" src="./Assets/images/Product/Choose-02.jpg" />
+              <img class="favImg" src="./Assets/images/Product/Choose-03.jpg" />
+              <img class="favImg" src="./Assets/images/Product/Choose-04.jpg" />
+              <img class="favImg" src="./Assets/images/Product/Choose-05.jpg" />
+            </span>
+          </figure>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <section class="contact-spicy">
+          <header class="contact-footer"><h2>Kontakt Spicy:</h2></header>
+          <div class="contact-text">
+            <p>Spicy <span class="red-span">Hot</span>Company</p>
 
-                    <p>Ring til os:</p>
-                </div>
+            <p>Boulevarden 39</p>
 
-                <figure class="so-me-images">
-                    <img src="./Assets/images/Some-Facebook.png">
-                    <img src="./Assets/images/SoMe-Twitter.png">
-                    <img src="./Assets/images/SoMe-Youtube.png">
-                </figure>
-            </section>
+            <p>9000 Aalborg</p>
 
-            <section class="google-maps">
-                <header class="google-header"><h2>Google Maps:</h2></header>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.459063784277!2d9.916163077260903!3d57.0436823918323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932f3bcda26e3%3A0xcd44aae1c87a63c5!2sBoulevarden%2039%2C%209000%20Aalborg!5e0!3m2!1sen!2sdk!4v1699357738323!5m2!1sen!2sdk" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-        </footer>
+            <p>Send os en mail:</p>
+
+            <p>Ring til os:</p>
+          </div>
+
+          <figure class="so-me-images">
+            <img src="./Assets/images/Some-Facebook.png" />
+            <img src="./Assets/images/SoMe-Twitter.png" />
+            <img src="./Assets/images/SoMe-Youtube.png" />
+          </figure>
+        </section>
+
+        <section class="google-maps">
+          <header class="google-header"><h2>Google Maps:</h2></header>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.459063784277!2d9.916163077260903!3d57.0436823918323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464932f3bcda26e3%3A0xcd44aae1c87a63c5!2sBoulevarden%2039%2C%209000%20Aalborg!5e0!3m2!1sen!2sdk!4v1699357738323!5m2!1sen!2sdk"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

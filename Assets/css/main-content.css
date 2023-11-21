@@ -1,176 +1,176 @@
 #myDialog {
-    width: 50%;
-    height: 40%;
-    border-radius: 10px;
-    background: #000;
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
+  background: #000;
 }
 
 #myDialog a {
-    text-decoration: none;
-    font-size: 17px;
-    color: #c82113;
+  text-decoration: none;
+  font-size: 17px;
+  color: #c82113;
 }
 
 dialog form {
-    padding-top: 0.7rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: #fff;
+  padding-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
 }
 
 form input {
-    border-radius: 10px;
-    padding: 0.3rem;
+  border-radius: 10px;
+  padding: 0.3rem;
 }
 
 form input::placeholder {
-    padding-left: 0.3rem;
+  padding-left: 0.3rem;
 }
 
 form input:invalid {
-    outline: #c82113;
+  outline: #c82113;
 }
 
 form .form-btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 2rem;
 }
 
 .form-btns input[type="reset"],
 .form-btns input[type="submit"] {
-    padding: 1rem 1.4rem;
-    color: #fff;
-    border: 0;
-    cursor: pointer;
+  padding: 0.5rem 1.4rem;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
 }
 
 .form-btns input[type="reset"] {
-    background: #c82113;
+  background: #c82113;
 }
 
 .form-btns input[type="submit"] {
-    background: #1085df;
+  background: #1085df;
 }
 
-h1, h2 {
-    font-family: "Bebas Neue";
+h1,
+h2 {
+  font-family: "Bebas Neue";
 }
 
 p,
 a {
-    font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: "Sofia Sans Condensed", sans-serif;
 }
 
 .about-spicy .about-header,
 .gallery .gallery-header,
-.favorite-header{
-    text-align: center;
-    color: #c82113;
+.favorite-header {
+  text-align: center;
+  color: #c82113;
 }
 
 .about-spicy .about-spicy-article {
-    padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .about-spicy-article .article-text {
-    color: #333;
+  color: #333;
 }
 
 .about-spicy-article .about-footer {
-    text-align: right;
+  text-align: right;
 }
 
 .about-footer a {
-    text-decoration: none;
-    color: #000;
-    padding-right: 0.4rem;
+  text-decoration: none;
+  color: #000;
+  padding-right: 0.4rem;
 }
 
-.gallery .gallery-images img{
-    width: 40%;
+.gallery .gallery-images img {
+  width: 40%;
 }
 
 .gallery-images {
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .favorite .favorite-images .big img {
-    width: 60%;
-    cursor: pointer;
+  width: 60%;
+  cursor: pointer;
 }
 
 .big {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 .favorite-images .regular img {
-    width: 27%;
-    cursor: pointer;
+  width: 27%;
+  cursor: pointer;
 }
 
 .regular {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Media Queries */
 /* Desktop Version */
 @media (min-width: 1300px) {
+  #myDialog {
+    margin-top: 2rem;
+    height: 34%;
+  }
 
-    #myDialog {
-        margin-top: 2rem;
-        height: 34%;
-    }
+  form input {
+    padding: 0.5rem;
+  }
 
-    form input {
-        padding: 0.5rem;
-    }
-
-    /* .about-spicy {
+  /* .about-spicy {
         display: flex;
         flex-direction: column;
         align-items: center;
     } */
 
-    .desktop-articles {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .desktop-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .gallery .gallery-images img {
-        width: 30vw;
-    }
+  .gallery .gallery-images img {
+    width: 30vw;
+  }
 
-    .favorite .favorite-images {
-        display: flex;
-        flex-direction: row;
-        gap: 0;
-    }
+  .favorite .favorite-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
 
-    .favorite-images .big img {
-        width: 20vw;
-    }
+  .favorite-images .big img {
+    width: 20vw;
+  }
 
-    .favorite-images .regular {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .favorite-images .regular {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .favorite-images .regular img {
-        width: 14vw;
-    }
+  .favorite-images .regular img {
+    width: 14vw;
+  }
 }
