@@ -55,3 +55,17 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   }
 });
+
+//Image gallery
+const bigImage = document.getElementById("bigImage");
+const regImages = document.querySelectorAll(".favImg");
+let originalBigImgSrc = bigImage.src;
+
+const regImagesArray = Array.from(regImages);
+regImagesArray.map((image) => {
+  image.addEventListener("click", (e) => {
+    let newSrc = bigImage.src;
+    bigImage.src = e.target.src;
+    e.target.src = newSrc;
+  });
+});
