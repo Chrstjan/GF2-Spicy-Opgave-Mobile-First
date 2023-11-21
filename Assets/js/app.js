@@ -62,10 +62,11 @@ const regImages = document.querySelectorAll(".favImg");
 let originalBigImgSrc = bigImage.src;
 
 const regImagesArray = Array.from(regImages);
+
 regImagesArray.map((image) => {
   image.addEventListener("click", (e) => {
-    let newSrc = bigImage.src;
+    let newBigImgSrc = bigImage.src;
     bigImage.src = e.target.src;
-    e.target.src = newSrc;
+    e.target.src = newBigImgSrc;
   });
 });
