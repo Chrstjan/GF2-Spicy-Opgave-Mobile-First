@@ -38,9 +38,9 @@ form.addEventListener("submit", (e) => {
     nameRegExp.test(trimmedName);
   if (!nameIsValid) {
     errorMessages.push("Name is required and must be bewteen 4 and 30 letters");
-    requirements[0].style.color = "red";
+    requirements[0].classList.add("errorMessage");
   } else {
-    requirements[0].style.color = "green";
+    requirements[0].classList.add("correctMessage");
     console.log("Name is valid");
   }
 
@@ -53,28 +53,33 @@ form.addEventListener("submit", (e) => {
   const numberIsValid = phoneNumber.value.length <= maxNumberLength && numberRegExp.test(phoneNumber.value);
   if (!numberIsValid) {
     errorMessages.push("A valid phone number is required");
-    requirements[1].style.color = "red";
+    requirements[1].classList.add("errorMessage");
   }
   else {
-    requirements[1].style.color = "green";
+    requirements[1].classList.add("correctMessage");
     console.log("Number is valid");
   }
   //Validating Email
   const emailIsValid = email.value.length > 0 && emailRegExp.test(email.value);
   if (!emailIsValid) {
     errorMessages.push("A valid email is required");
-    requirements[2].style.color = "red";
+    requirements[2].classList.add("errorMessage");
   } else {
-    requirements[2].style.color = "green";
+    requirements[2].classList.add("correctMessage");
     console.log("Email is valid");
   }
 
   if (errorMessages.length > 0) {
     e.preventDefault();
+    console.log(errorMessages);
   }
 
   if (nameIsValid && numberIsValid && emailIsValid) {
     console.log("Form udfyldt korrekt")
+    modal.removeChild(form);
+    let formResponseMsg = document.createElement("h2");
+    formResponseMsg.innerText = "Din mail er sendt afsted!";
+    modal.appendChild(formResponseMsg);
   }
 });
 
