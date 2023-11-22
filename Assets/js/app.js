@@ -56,7 +56,7 @@ form.addEventListener("submit", (e) => {
     requirements[1].classList.add("errorMessage");
   }
   else {
-    requirements[1].classList.add("correctMessage");
+    requirements[1].classList.add("correctMessage"); 
     console.log("Number is valid");
   }
   //Validating Email
