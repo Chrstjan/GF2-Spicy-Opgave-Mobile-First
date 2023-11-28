@@ -1,8 +1,13 @@
 #myDialog {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   width: 50%;
-  height: 40%;
+  height: 55%;
   border-radius: 10px;
   background: #000;
+  padding: 1.6rem;
+  display: none;
 }
 
 #myDialog a {
@@ -16,7 +21,7 @@
   color: #fff;
 }
 
-dialog form {
+div form {
   padding-top: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -151,7 +156,7 @@ a {
 @media (min-width: 1300px) {
   #myDialog {
     margin-top: 2rem;
-    height: 34%;
+    height: 44%;
   }
 
   form input {

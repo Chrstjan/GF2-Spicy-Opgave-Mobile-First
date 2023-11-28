@@ -100,7 +100,23 @@ const createImageGallery = () => {
 
     galleryFigure.appendChild(galleryImage);
     gallery.appendChild(galleryFigure);
+
+    const imageModal = () => {
+      const imageModalWindow = document.createElement("figure");
+      const modalImage = galleryImage;
+      galleryFigure.innerHTML = "";
+      imageModalWindow.appendChild(modalImage);
+      gallery.appendChild(imageModalWindow);
+
+      imageModalWindow.addEventListener("click", () => {
+        galleryFigure.innerHTML = "";
+        createImageGallery();
+      });
+    };
+
+    galleryImage.addEventListener("click", imageModal);
   });
+
 };
 
 createImageGallery();
