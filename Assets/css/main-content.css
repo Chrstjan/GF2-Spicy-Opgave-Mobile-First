@@ -110,9 +110,15 @@ a {
 
 .gallery-images {
   padding: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.3rem;
+}
+
+.gallery .gallery-images img {
+  width: 60vw;
 }
 
 .favorite .favorite-images .big img {
@@ -160,6 +166,13 @@ a {
   .gallery .gallery-images img {
     padding: 0;
     width: 30vw;
+  }
+
+  .gallery-images {
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
   }
 
   .modal-image {
