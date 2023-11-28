@@ -110,9 +110,8 @@ a {
 
 .gallery-images {
   padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.3rem;
 }
 
@@ -153,19 +152,27 @@ a {
     padding: 0.5rem;
   }
 
-  /* .about-spicy {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-
   .desktop-articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .gallery .gallery-images img {
+    padding: 0;
     width: 30vw;
+  }
+
+  .modal-image {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%);
+    border: 3px solid #000;
+  }
+
+  .modal-image img {
+    width: 20vw;
+    padding: 0;
   }
 
   .favorite .favorite-images {

@@ -83,6 +83,28 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+//Js Generated Gallery
+const galleryArray = ['Chili-01.jpg', 'Chili-02.jpg', 'Chili-03.jpg', 'Chili-04.jpg', 'Chili-05.jpg', 'Chili-06.jpg',];
+
+const baseUrl = './Assets/images/Product/';
+
+const gallery = document.getElementById("gallery");
+const galleryFigure = document.getElementById("galleryFigure");
+
+const createImageGallery = () => {
+  galleryArray.forEach((img) => {
+    const galleryImage = document.createElement("img");
+    const galleryImageSrc = baseUrl + img;
+    galleryImage.classList.add("gallery-images");
+    galleryImage.src = galleryImageSrc;
+
+    galleryFigure.appendChild(galleryImage);
+    gallery.appendChild(galleryFigure);
+  });
+};
+
+createImageGallery();
+
 //Image gallery
 const bigImage = document.getElementById("bigImage");
 const regImages = document.querySelectorAll(".favImg");

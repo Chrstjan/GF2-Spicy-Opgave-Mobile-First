@@ -6,7 +6,7 @@
 
     <!--Different stylesheet for sections-->
     <link rel="stylesheet" href="./Assets/css/main.css" />
-    <script async defer src="./Assets/js/app.js"></script>
+    <script type="module" src="./Assets/js/app.js" defer></script>
 
     <!--Google fonts & fontawesome icons-->
     <link
@@ -125,18 +125,8 @@
 
         <section class="gallery" id="gallery">
           <header class="gallery-header"><h2>Galleri</h2></header>
-          <!--Gallery One-->
-          <figure class="gallery-images">
-            <img src="./Assets/images/Product/Chili-02.jpg" />
-            <img src="./Assets/images/Product/Chili-01.jpg" />
-            <img src="./Assets/images/Product/Chili-03.jpg" />
-          </figure>
-
-          <!--Gallery Two-->
-          <figure class="gallery-images">
-            <img src="./Assets/images/Product/Chili-04.jpg" />
-            <img src="./Assets/images/Product/Chili-05.jpg" />
-            <img src="./Assets/images/Product/Chili-06.jpg" />
+          <figure id="galleryFigure" class="gallery-images">
+            <!--Gallery is made in JavaScript-->
           </figure>
         </section>
 
