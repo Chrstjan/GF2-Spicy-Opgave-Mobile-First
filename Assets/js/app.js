@@ -104,9 +104,10 @@ const createImageGallery = () => {
     const imageModal = () => {
       const imageModalWindow = document.createElement("figure");
       const modalImage = galleryImage;
+      modalImage.classList.add("modal-image")
       galleryFigure.innerHTML = "";
       imageModalWindow.appendChild(modalImage);
-      gallery.appendChild(imageModalWindow);
+      galleryFigure.appendChild(imageModalWindow);
 
       imageModalWindow.addEventListener("click", () => {
         galleryFigure.innerHTML = "";
