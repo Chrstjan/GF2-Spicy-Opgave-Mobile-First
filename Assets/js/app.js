@@ -132,7 +132,7 @@ const regImagesArray = Array.from(regImages);
 regImagesArray.map((image) => {
   image.addEventListener("click", (e) => {
     let newBigImgSrc = bigImage.src;
-    bigImage.src = e.target.src;
+    bigImage.src = e.target.src; 
     e.target.src = newBigImgSrc;
   });
 });
